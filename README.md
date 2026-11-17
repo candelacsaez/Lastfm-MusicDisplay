@@ -12,6 +12,7 @@ You need [Docker](https://www.docker.com/) and a free Last.fm account with an
 ```bash
 git clone <this-repo-url>
 cd <repo-folder>
+cp .env.example .env        # Windows: copy .env.example .env
 # edit .env and fill in LASTFM_API_KEY and LASTFM_USER
 docker compose up
 ```
