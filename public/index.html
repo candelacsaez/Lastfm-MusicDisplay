@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My last 24h, on a shelf</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Oswald:wght@700&family=Special+Elite&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Yellow handdrawn flower graphic element on the left side (outside shelf area) -->
+  <aside class="side-graphics side-left" aria-hidden="true">
+    <svg viewBox="0 0 240 720" class="flower-doodle" fill="none" stroke="#FFE600" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Top Flower -->
+      <path d="M 104,95 C 96,65 82,40 76,36 C 92,32 118,36 128,46 C 130,66 124,86 116,96" stroke-width="4.5"/>
+      <path d="M 124,100 C 142,76 168,62 184,70 C 190,86 176,102 158,110 C 142,116 128,110 122,104" stroke-width="4.5"/>
+      <path d="M 124,116 C 148,116 178,126 182,142 C 180,160 156,166 138,156 C 124,146 118,130 118,120" stroke-width="4.5"/>
+      <path d="M 104,124 C 96,140 86,162 74,164 C 64,152 62,136 68,126 C 76,116 92,118 100,122" stroke-width="4.5"/>
+      <path d="M 96,106 C 74,94 50,92 46,106 C 50,120 70,126 90,118 C 96,114 98,108 96,106" stroke-width="4.5"/>
+      <!-- Top flower center loop -->
+      <path d="M 106,108 C 102,96 120,94 124,106 C 126,118 110,124 104,114 Z" stroke-width="4"/>
+      <path d="M 110,104 C 116,100 122,106 118,114 C 114,118 108,112 110,104" stroke-width="3"/>
+
+      <!-- Vertical connecting stem -->
+      <path d="M 112,126 C 115,185 128,270 136,335 C 140,375 132,410 124,438" stroke-width="4"/>
+
+      <!-- Bottom Flower -->
+      <path d="M 130,432 C 124,350 172,330 198,355 C 208,392 172,424 142,442" stroke-width="4.5"/>
+      <path d="M 106,444 C 62,398 28,428 40,455 C 58,480 96,468 118,454" stroke-width="4.5"/>
+      <path d="M 108,460 C 76,476 54,528 86,550 C 110,538 122,496 124,464" stroke-width="4.5"/>
+      <path d="M 120,466 C 114,528 92,592 116,618 C 134,606 146,538 130,470" stroke-width="4.5"/>
+      <!-- Center thick contour -->
+      <path d="M 110,442 L 144,430 L 156,454 L 122,466 Z" stroke-width="5"/>
+      <ellipse cx="132" cy="448" rx="12" ry="10" stroke-width="3"/>
+      <!-- Branch to right -->
+      <path d="M 154,448 L 235,424" stroke-width="5"/>
+    </svg>
+  </aside>
+
+  <!-- Yellow handdrawn graphic elements on the right side (outside shelf area) -->
+  <aside class="side-graphics side-right" aria-hidden="true">
+    <!--<svg viewBox="0 0 120 70" class="doodle doodle-halo">
+      <path d="M 16,36 C 14,20 38,12 65,12 C 95,12 108,22 105,36 C 101,48 72,54 44,52 C 24,51 16,42 22,30 C 28,18 54,16 82,18" 
+            fill="none" stroke="#FFE600" stroke-width="4" stroke-linecap="round"/>
+    </svg>-->
+    <svg viewBox="0 0 100 80" class="doodle doodle-arrow-right">
+      <path d="M 80,14 C 52,14 26,28 22,56" fill="none" stroke="#FFE600" stroke-width="4.5" stroke-linecap="round"/>
+      <path d="M 10,44 L 22,58 L 36,46" fill="none" stroke="#FFE600" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <svg viewBox="0 0 80 80" class="doodle doodle-sparkle">
+      <path d="M 40,6 Q 40,34 74,40 Q 40,46 40,74 Q 40,46 6,40 Q 40,34 40,6 Z" 
+            fill="rgba(255, 230, 0, 0.18)" stroke="#FFE600" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <svg viewBox="0 0 100 100" class="doodle doodle-star">
+      <path d="M 50,8 L 64,88 L 8,36 L 92,36 L 36,88 Z" fill="rgba(255, 230, 0, 0.12)" stroke="#FFE600" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <svg viewBox="0 0 70 70" class="doodle doodle-burst">
+      <path d="M 35,6 L 35,64 M 10,20 L 60,50 M 12,50 L 58,20" fill="none" stroke="#FFE600" stroke-width="4" stroke-linecap="round"/>
+    </svg>
+    <!--<svg viewBox="0 0 80 80" class="doodle doodle-box">
+      <path d="M 12,68 L 12,14 L 68,14" fill="none" stroke="#FFE600" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M 22,76 L 22,24 L 76,24" fill="none" stroke="#FFE600" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg> -->
+    <!--<svg viewBox="0 0 110 40" class="doodle doodle-scratch">
+      <path d="M 8,14 Q 35,26 62,12 T 104,18" fill="none" stroke="#FFE600" stroke-width="4" stroke-linecap="round"/>
+      <path d="M 16,26 Q 42,36 70,22 T 98,28" fill="none" stroke="#FFE600" stroke-width="3" stroke-linecap="round"/>
+    </svg>-->
+  </aside>
+
+  <header>
+    <h1>My Music Today</h1>
+    <p id="status">Loading your discs…</p>
+  </header>
+  <main id="shelf" aria-label="Songs played in the last 24 hours"></main>
+  <script src="app.js"></script>
+</body>
+</html> 
