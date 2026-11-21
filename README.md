@@ -9,15 +9,26 @@ Data comes from [Last.fm](https://www.last.fm/) (`user.getRecentTracks`) through
 You need [Docker](https://www.docker.com/) and a free Last.fm account with an
 [API key](https://www.last.fm/api/account/create).
 
+### Local development
+
 ```bash
-git clone <this-repo-url>
-cd <repo-folder>
+git clone https://github.com/candelacsaez/Lastfm-MusicDisplay.git
+cd Lastfm-MusicDisplay
 cp .env.example .env        # Windows: copy .env.example .env
 # edit .env and fill in LASTFM_API_KEY and LASTFM_USER
 docker compose up
 ```
 
 Open http://localhost:3000
+
+### Production server deployment (with Caddy & TLS)
+
+Live at: **https://student03.wt.thomasjuldo.com**
+
+To deploy on the server:
+```bash
+docker compose -f docker-compose.yml -f compose.server.yaml up -d --build
+```
 
 ## The idea
 
