@@ -1,3 +1,23 @@
 student03.wt.thomasjuldo.com {
-	reverse_proxy web:3000
+	# Redirect /counter to /counter/
+	redir /counter /counter/ 308
+
+	# Visit counter API
+	handle /api/visits* {
+		uri strip_prefix /api
+		reverse_proxy counter-api:8082
+	}
+	handle /visits* {
+		reverse_proxy counter-api:8082
+	}
+
+	# Visit counter frontend
+	handle_path /counter/* {
+		reverse_proxy counter-site:80
+	}
+
+	# Last.fm shelf (web & API)
+	handle {
+		reverse_proxy shelf-web:3000
+	}
 }
