@@ -23,7 +23,9 @@ Open http://localhost:3000
 
 ### Production server deployment (with Caddy & TLS)
 
-Live at: **https://student03.wt.thomasjuldo.com**
+Live URLs:
+- **Last.fm shelf**: [https://student03.wt.thomasjuldo.com](https://student03.wt.thomasjuldo.com)
+- **Visit counter**: [https://student03.wt.thomasjuldo.com/counter/](https://student03.wt.thomasjuldo.com/counter/) (API at `/api/visits`)
 
 To deploy on the server:
 ```bash
